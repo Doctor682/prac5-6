@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1  align=center>Поштова форма</h1>
+        <form NAME="mailer" METHOD="post" action="mailto:sashanew212@gmail.com" ENCTYPE="text/plain" onSubmit="(document.mailer.action += mailtoandSubject)">
+            <table border=2 align=center cellspacing=1 cellpadding=2 BgColor=#FFFFE0>
+                <tr><td><font size="2" color="#0000CD">Ім'я:</font></td>
+                    <td><input TYPE="text" NAME="Name" size="24" onChange="msg(this.form)"></td></tr>
+                <tr><td><font size="2" color="#0000CD">Тема:</font></td>
+                    <td><input TYPE="text" NAME="Subject" size="24" onChange="msg(this.form)"></td></tr>
+                <tr><td><font size="2" color="#0000CD">Повідомлення:</font></td>
+                    <td><textarea NAME="Message" COLS=40 ROWS=6 onChange="msg(this.form)"></textarea></td></tr>
+                <tr><td colspan=2 align=center><input TYPE="submit" VALUE="Відправити" ONCLICK="return checkIt()">
+                        <input TYPE=reset VALUE=" Очистити "></td></tr></table>
+        </form>
+    </body>
+</html>

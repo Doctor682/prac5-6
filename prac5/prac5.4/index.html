@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Розгалужений обчислювальний процес</h2>
+
+<div>
+  <label for="xMin">Мінімальне значення x:</label>
+  <input type="number" id="xMin" name="xMin">
+</div>
+
+<div>
+  <label for="xMax">Максимальне значення x:</label>
+  <input type="number" id="xMax" name="xMax">
+</div>
+
+<div>
+  <label for="step">Крок зміни значення x:</label>
+  <input type="number" id="step" name="step">
+</div>
+
+<button onclick="calculate()">Розрахувати</button>
+
+<table>
+  <thead>
+    <tr>
+      <th>x</th>
+      <th>Z</th>
+    </tr>
+  </thead>
+  <tbody id="resultTableBody"></tbody>
+</table>
+<script src="main.js"></script>
+</body>
+</html>
